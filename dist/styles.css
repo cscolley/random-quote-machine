@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2");
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #794848;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quote-box {
+  border-radius: 3px;
+  width: 450px;
+  padding: 40px 50px;
+  background-color: #fff;
+}
+#quote-box .quote-text {
+  font-weight: 500;
+  font-size: 1.75em;
+}
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+#quote-box .quote-author {
+  text-align: right;
+  margin-top: 20px;
+}
+#quote-box .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#quote-box .buttons .button {
+  align-items: center;
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #794848;
+  outline: none;
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 0px 10px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+#quote-box .buttons .button:hover {
+  opacity: 0.9;
+}
+#quote-box .buttons .button#tweet-quote {
+  font-size: 1.6em;
+}
+
+@media only screen and (max-width: 600px) {
+  #quote-box {
+    width: 100%;
+  }
+}
